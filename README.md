@@ -98,7 +98,59 @@ Because: Energy proximity (+0.94); Acoustic preference match (+0.5)
 **Screenshot or video** *(optional)*: <!-- Insert a screenshot or demo video link here -->
 
 ---
+when I added 3 total users
+Top recommendations for High-Energy Pop:                           
 
+Gym Hero - Score: 2.97
+Because: Genre match (+2.0); Energy proximity (+0.97)
+
+Sunrise City - Score: 2.92
+Because: Genre match (+2.0); Energy proximity (+0.92)
+
+Storm Runner - Score: 0.99
+Because: Energy proximity (+0.99)
+
+Neon Palms - Score: 0.96
+Because: Energy proximity (+0.96)
+
+Corner Store Freestyle - Score: 0.88
+Because: Energy proximity (+0.88)
+
+
+Top recommendations for Chill Lofi:
+
+Library Rain - Score: 4.45
+Because: Genre match (+2.0); Mood match (+1.0); Energy proximity (+0.95); Acoustic preference match (+0.5)
+
+Midnight Coding - Score: 4.38
+Because: Genre match (+2.0); Mood match (+1.0); Energy proximity (+0.88); Acoustic preference match (+0.5)
+
+Focus Flow - Score: 3.40
+Because: Genre match (+2.0); Energy proximity (+0.90); Acoustic preference match (+0.5)
+
+Spacewalk Thoughts - Score: 2.48
+Because: Mood match (+1.0); Energy proximity (+0.98); Acoustic preference match (+0.5)
+
+Winter Glass - Score: 1.44
+Because: Energy proximity (+0.94); Acoustic preference match (+0.5)
+
+
+Top recommendations for Edge Case (Conflicting):
+
+Storm Runner - Score: 2.99
+Because: Genre match (+2.0); Energy proximity (+0.99)
+
+Little Victories - Score: 1.21
+Because: Energy proximity (+0.71); Acoustic preference match (+0.5)
+
+Marigold Steps - Score: 1.04
+Because: Energy proximity (+0.54); Acoustic preference match (+0.5)
+
+Midnight Coding - Score: 1.02
+Because: Energy proximity (+0.52); Acoustic preference match (+0.5)
+
+Focus Flow - Score: 1.00
+Because: Energy proximity (+0.50); Acoustic preference match (+0.5)
 ## Experiments You Tried
 
 Use this section to document the experiments you ran. For example:
@@ -106,6 +158,63 @@ Use this section to document the experiments you ran. For example:
 - What happened when you changed the weight on genre from 2.0 to 0.5
 - What happened when you added tempo or valence to the score
 - How did your system behave for different types of users
+
+this was my output:
+
+Top recommendations for High-Energy Pop:                           
+
+Gym Hero - Score: 2.94
+Because: Genre match (+1.0); Energy proximity (+1.94)
+
+Sunrise City - Score: 2.84
+Because: Genre match (+1.0); Energy proximity (+1.84)
+
+Storm Runner - Score: 1.98
+Because: Energy proximity (+1.98)
+
+Neon Palms - Score: 1.92
+Because: Energy proximity (+1.92)
+
+Corner Store Freestyle - Score: 1.76
+Because: Energy proximity (+1.76)
+
+
+Top recommendations for Chill Lofi:
+
+Library Rain - Score: 4.40
+Because: Genre match (+1.0); Mood match (+1.0); Energy proximity (+1.90); Acoustic preference match (+0.5)
+
+Midnight Coding - Score: 4.26
+Because: Genre match (+1.0); Mood match (+1.0); Energy proximity (+1.76); Acoustic preference match (+0.5)
+
+Spacewalk Thoughts - Score: 3.46
+Because: Mood match (+1.0); Energy proximity (+1.96); Acoustic preference match (+0.5)
+
+Focus Flow - Score: 3.30
+Because: Genre match (+1.0); Energy proximity (+1.80); Acoustic preference match (+0.5)
+
+Winter Glass - Score: 2.38
+Because: Energy proximity (+1.88); Acoustic preference match (+0.5)
+
+
+Top recommendations for Edge Case (Conflicting):
+
+Storm Runner - Score: 2.98
+Because: Genre match (+1.0); Energy proximity (+1.98)
+
+Gym Hero - Score: 1.94
+Because: Energy proximity (+1.94)
+
+Neon Palms - Score: 1.92
+Because: Energy proximity (+1.92)
+
+Little Victories - Score: 1.92
+Because: Energy proximity (+1.42); Acoustic preference match (+0.5)
+
+Sunrise City - Score: 1.84
+Because: Energy proximity (+1.84)
+
+pretty similar, but the chill lofi surprised me the most.
 
 ---
 

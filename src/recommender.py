@@ -79,8 +79,8 @@ def score_song(user_prefs: Dict, song: Dict) -> Tuple[float, List[str]]:
         return "".join(character for character in value.casefold() if character.isalnum())
 
     if normalize_label(song["genre"]) == normalize_label(user_prefs["favorite_genre"]):
-        score += 2.0
-        reasons.append("Genre match (+2.0)")
+        score += 1.0
+        reasons.append("Genre match (+1.0)")
 
     if normalize_label(song["mood"]) == normalize_label(user_prefs["favorite_mood"]):
         score += 1.0
@@ -90,9 +90,10 @@ def score_song(user_prefs: Dict, song: Dict) -> Tuple[float, List[str]]:
         0.0,
         min(1.0, 1.0 - abs(user_prefs["target_energy"] - song["energy"])),
     )
-    score += energy_score
-    if energy_score > 0:
-        reasons.append(f"Energy proximity (+{energy_score:.2f})")
+    energy_points = 2.0 * energy_score
+    score += energy_points
+    if energy_points > 0:
+        reasons.append(f"Energy proximity (+{energy_points:.2f})")
 
     if user_prefs["likes_acoustic"] is True and song["acousticness"] > 0.5:
         score += 0.5
