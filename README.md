@@ -77,11 +77,22 @@ Paste a sample of your recommender's output here as a text block so a reader can
 
 ```
 # e.g.:
-# User profile: genre=indie, mood=chill, energy=low
-# Recommendations:
-#   1. ...
-#   2. ...
-#   3. ...
+Top recommendations:
+
+Library Rain - Score: 4.45
+Because: Genre match (+2.0); Mood match (+1.0); Energy proximity (+0.95); Acoustic preference match (+0.5)
+
+Midnight Coding - Score: 4.38
+Because: Genre match (+2.0); Mood match (+1.0); Energy proximity (+0.88); Acoustic preference match (+0.5)
+
+Focus Flow - Score: 3.40
+Because: Genre match (+2.0); Energy proximity (+0.90); Acoustic preference match (+0.5)
+
+Spacewalk Thoughts - Score: 2.48
+Because: Mood match (+1.0); Energy proximity (+0.98); Acoustic preference match (+0.5)
+
+Winter Glass - Score: 1.44
+Because: Energy proximity (+0.94); Acoustic preference match (+0.5)
 ```
 
 **Screenshot or video** *(optional)*: <!-- Insert a screenshot or demo video link here -->
