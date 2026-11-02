@@ -28,6 +28,11 @@ Some prompts to answer:
 - How do you choose which songs to recommend
 
 You can include a simple diagram or bullet list if helpful.
+Song Features: Tracks data including genre, mood, energy, tempo_bpm, valence, danceability, and acousticness.
+UserProfile Data: Stores user preferences: favorite_genre, favorite_mood, target_energy, and a boolean likes_acoustic.
+Genre and mood awards full points for exact text matches with favorite_genre and favorite_mood, energy and acousticness calculates proximity scores based on how close energy is to target_energy (
+1−∣target−actual∣) and whether acousticness matches likes_acoustic. The scores are weighted and summed into a single compatibility score per song. For choosing recommendations, the Recommender scores every song in the dataset, ranks them from highest score to lowest, and returns the top 
+k matches.
 
 ---
 
